@@ -1,4 +1,4 @@
-declare module "presto-client" {
+declare module "presto-client-ts" {
   interface IPrestoClientOptions {
     host: string;
     ssl?: {
@@ -70,7 +70,7 @@ declare module "presto-client" {
   interface IPrestoClientExecuteOptions {
     query: string;
     catalog?: string;
-    prepares?: string;
+    prepares?: string[];
     schema?: string;
     timezone?: string;
     info?: boolean;
